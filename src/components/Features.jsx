@@ -75,18 +75,15 @@ const Features = () => {
                 </p>
             
             <p className='max-w-md font-circular-web text-lg text-blue-50 opacity-50 '>
-                some random paragraph............
-                sfsdf
-                sddfsdf
-                sdfsdfsdfsdfsdfsf
+            Meet the team that debugs life one line at a time!
             
             </p>
             </div>
             <BentoTilt className='border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]'>
                 <BentoCard
-                src="videos/feature-1.mp4"
-                title={<>Pres<b>id</b>ent</>}
-                description={<b>Ishanvi Verma</b>}
+                src={'videos/pres.jpg'}
+                title={<><span className="text-white">Pres<b>id</b>ent</span></>}
+                description={<span className="text-white"><b>Ishanvi Verma</b></span>}
                 isComingSoon
                 />
             </BentoTilt>
@@ -127,7 +124,7 @@ const Features = () => {
                 <BentoCard
                 src="videos/featue-2.png"
                 title={<><span className="text-white">Te<b>c</b>h <b>h</b>ead</span></>}
-                description={<><b>Chrag</b></>}
+                description={<><span className="text-white"><b>Chrag</b></span></>}
                 />
            </BentoTilt>
            <BentoTilt className='bento-tilt_1 ms-20 md:col-span-1 md:ms-0'>
@@ -152,7 +149,7 @@ const Features = () => {
                 <BentoCard
                 src={"videos/socia.jpg"}
                 title={<><span className="text-white">PR<b> & o</b>utreach<br/> Head</span></>}
-                description={<><b>raunak</b></>}
+                description={<><span className="text-white"><b>raunak</b></span></>}
                 />
            </BentoTilt>
            
