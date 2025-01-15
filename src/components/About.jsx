@@ -21,7 +21,7 @@ const About = () => {
             
           width: "100vw",
           height: "100vh",
-          borderRadius: 20,
+          borderRadius: 0,
         });
       });
     
@@ -32,17 +32,17 @@ const About = () => {
                 Welcome to codechef
             </h2>
             <AnimatedTitle
-          title="Introducing Our New Hackath<b>o</b>"
+          title="Introducing Our New Hackath<b>on</b>"
           containerClass="mt-5 !text-black !text-8xl text-center"
         />
         <AnimatedTitle
-          title="some more random inf<b>o</b>"
+          title="<b></b>"
           containerClass="!mt-0 !text-black !text-8xl !md:text-4xl !sm:text-2xl text-center"
         />
             <div className='about-subtext'>
-                <p>ranom jibrish waaaa waaaa waaaa</p>
+                <p>The details are still a secrete</p>
                 <p>
-                    more paragraph
+                    stay tuned to find out
                 </p>
             </div>
         </div>

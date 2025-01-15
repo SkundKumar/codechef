@@ -43,7 +43,7 @@ const Hero = () => {
       trigger:"#video-frame",
       start:"center center",
       end:"bottom center",
-      scrub:2
+      scrub:1
     }
    })
    })
