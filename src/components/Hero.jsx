@@ -7,6 +7,8 @@ import { TfiInstagram } from 'react-icons/tfi';
 import { PacmanLoader } from 'react-spinners';
 import { useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/all';
+import Lottie from 'lottie-react';
+import animationData from '../animation/Animation - 1737018563463.json'
 gsap.registerPlugin(ScrollTrigger)
 const Hero = () => {
     const [currrentIndex, setCurrentIndex] = useState(1);
@@ -75,9 +77,9 @@ const Hero = () => {
       );
   return (
     <div className='relative h-dvh w-screen overflow-x-hidden'>
-      {isLoading && (
+      {(
         <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-blue-75">
-          <PacmanLoader/>
+          <Lottie animationData={animationData} />
         </div>
       )}
 
