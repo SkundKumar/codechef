@@ -9,6 +9,11 @@ import { useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/all';
 import Lottie from 'lottie-react';
 import animationData from '../animation/Animation - 1737018563463.json'
+import arrow from '../animation/Animation - 1737019185464.json'
+import arrow2 from '../animation/Animation - 1737019195160.json'
+import arrow3 from '../animation/Animation - 1737020553153.json'
+import arrow4 from '../animation/Animation - 1737020703152.json'
+import arrow5 from '../animation/Animation - 1737020791070.json'
 gsap.registerPlugin(ScrollTrigger)
 const Hero = () => {
     const [currrentIndex, setCurrentIndex] = useState(1);
@@ -21,6 +26,7 @@ const Hero = () => {
         setHasClicked(true);
         setCurrentIndex(upcomingVideoIndex);
     }
+    
     const handleVideoLoad=()=>{
         setLoadedVideo((prev)=>prev +1)
     }
@@ -61,11 +67,12 @@ const Hero = () => {
               duration: 1,
               ease: "power1.inOut",
               onStart: () => nextVideoRef.current.play(),
+              
             });
             gsap.from("#current-video", {
               transformOrigin: "center center",
               scale: 0,
-              duration: 2.5,
+              duration: 1.5,
               ease: "power1.inOut",
             });
           }
@@ -77,7 +84,7 @@ const Hero = () => {
       );
   return (
     <div className='relative h-dvh w-screen overflow-x-hidden'>
-      {(
+      { isLoading &&(
         <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-blue-75">
           <Lottie animationData={animationData} />
         </div>
@@ -85,7 +92,9 @@ const Hero = () => {
 
         <div id="video-frame" className='relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75'>
             <div>
+            
                 <div className='mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg'>
+                
                     <div onClick={handleMiniVdClick} className='origin-center scale-50 opacity-0 transition-all duration-700 ease-in-out hover:scale-100 hover:opacity-100'>
                         <video
                         ref={nextVideoRef}
@@ -97,8 +106,9 @@ const Hero = () => {
                         onLoadedData={handleVideoLoad}
                         />
                     </div>
-
+                    
                 </div>
+                
                 <video
                 ref={nextVideoRef}
                 src={getVideoSource(currrentIndex)}
@@ -108,6 +118,7 @@ const Hero = () => {
                 className='absolute-center invisible absolute z-20 size-64 object-cover object-center'
                 
                 />
+                
                 <video
                 src={getVideoSource(currrentIndex == totalVideo -1? 1 : currrentIndex)}
                 autoPlay
@@ -116,11 +127,18 @@ const Hero = () => {
                 className='absolute left-0 top-0 size-full object-cover object-center'
                 onLoadedData={handleVideoLoad}
                 />
+                
             </div>
+            
             <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75 ">
           Get<b>S</b>et<b>C</b>ode
         </h1>
+        <div className='w-screen h-screen z-10 flex justify-center items-end'>
+          <Lottie animationData={arrow3} className='w-48 h-48 -rotate-90'/>
+          </div>
         <div className='absolute left-0 top-0 z-40 size-full'>
+          
+        
             <div className='mt-24 ml-3 sm:px-10'>
                 <h1 className='special-font hero-heading text-blue-100'><b>C</b>ode<b>C</b>hef_<b>BU</b>
                 </h1>

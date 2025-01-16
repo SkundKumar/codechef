@@ -22,7 +22,7 @@ const BentoCard = ({src,title,description,isComingSoon})=>{
             <div className='relative z-10 flex size-full flex-col justify-between p-5 text-blue-50'>
                 <div>
                     <h3 className='bento-title special-font text-black'>{title}</h3>
-                    <p className='mt-3 max-w-64 text-base md:text-lg font-circular-web text-black'>{description}</p>
+                    <p className='mt-3 max-w-64 text-base md:text-lg font-circular-web -left-0  text-black'>{description}</p>
                 </div>
             </div>
         
@@ -91,8 +91,8 @@ const Features = () => {
             <BentoTilt className='bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2'>
                 <BentoCard
                 src="videos/feature-2.png"
-                title={<>M<b>ul</b>timedi<b>a</b> & Desi<b>gn</b><br/> <b>h</b>ead</>}
-                description={<><b>Skund Kumar</b></>}
+                title={<><span className="text-white">M<b>ul</b>timedi<b>a</b> & Desi<b>gn</b><br/> <b>h</b>ead</span></>}
+                description={<><span className="text-white"><b>Skund Kumar</b></span></>}
                 />
            </BentoTilt>
            <BentoTilt className='bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0'>
@@ -138,14 +138,14 @@ const Features = () => {
             
             </div>
             <div className='grid h-[50vh] w-full grid-cols-2 grid-rows-1 gap-9 '>
-           <BentoTilt className='bento-tilt_1 mr-24 md:col-span-1 md:me-0'>
+           <BentoTilt className='bento-tilt_1 md:col-span-1 md:me-0'>
                 <BentoCard
                 src={"videos/naman.jpg"}
                 title={<>Fin<b>A</b>nce<br/> Head</>}
                 description={<><b>Naman Garg</b></>}
                 />
            </BentoTilt>
-           <BentoTilt className='bento-tilt_1 ms-24 md:col-span-1 md:ms-0'>
+           <BentoTilt className='bento-tilt_1 me-24 md:col-span-1 md:me-0'>
                 <BentoCard
                 src={"videos/socia.jpg"}
                 title={<><span className="text-white">PR<b> & o</b>utreach<br/> Head</span></>}

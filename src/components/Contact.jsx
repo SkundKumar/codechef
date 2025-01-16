@@ -19,7 +19,7 @@ const Contact = () => {
             
          </div>
 
-          <Button title="contact us" containerClass="mt-10 cursor-pointer" />
+          <Button title={<>FILL IT OR ELSE <b>ᕙ(⇀‸↼‵‵)ᕗ</b></>} containerClass="mt-10 cursor-pointer" />
         </div>
       </div>
     </div>
