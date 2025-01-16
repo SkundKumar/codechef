@@ -122,12 +122,12 @@ const Features = () => {
            </BentoTilt>
            <BentoTilt className='bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2'>
                 <BentoCard
-                src="videos/featue-2.png"
-                title={<><span className="text-white">Te<b>c</b>h <b>h</b>ead</span></>}
-                description={<><span className="text-white"><b>Chrag</b></span></>}
+                src="videos/tech.jpg"
+                title={<><span className="text-black">Te<b>c</b>h <b>h</b>ead</span></>}
+                description={<><span className="text-black"><b>Chirag</b></span></>}
                 />
            </BentoTilt>
-           <BentoTilt className='bento-tilt_1 ms-20 md:col-span-1 md:ms-0'>
+           <BentoTilt className='bento-tilt_1  md:col-span-1 md:ms-0'>
                 <BentoCard
                 src={"videos/social.jpg"}
                 title={<>Soc<b>Al</b> Media <br/> Head</>}
@@ -138,14 +138,14 @@ const Features = () => {
             
             </div>
             <div className='grid h-[50vh] w-full grid-cols-2 grid-rows-1 gap-9 '>
-           <BentoTilt className='bento-tilt_1 md:col-span-1 md:me-0'>
+           <BentoTilt className='bento-tilt_1 me-32 md:col-span-1 md:me-0'>
                 <BentoCard
                 src={"videos/naman.jpg"}
                 title={<>Fin<b>A</b>nce<br/> Head</>}
                 description={<><b>Naman Garg</b></>}
                 />
            </BentoTilt>
-           <BentoTilt className='bento-tilt_1 me-24 md:col-span-1 md:me-0'>
+           <BentoTilt className='bento-tilt_1 ms-14 md:col-span-1 md:ms-0'>
                 <BentoCard
                 src={"videos/socia.jpg"}
                 title={<><span className="text-white">PR<b> & o</b>utreach<br/> Head</span></>}
