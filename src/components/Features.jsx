@@ -154,16 +154,24 @@ const Features = () => {
            </BentoTilt>
            
            </div>
-           <BentoTilt className='border-hsla relative mb-7 mt-9 h-96 w-full overflow-hidden rounded-md md:h-[65vh]'>
-                
+           <div className='grid h-[50vh] w-full grid-cols-2 grid-rows-2 md:grid-rows-1 gap-9 mt-9 '>
+           <BentoTilt className='bento-tilt_1 me-32 md:col-span-1 md:me-0'>
                 <BentoCard
-                
-                src="videos/hero-1.mp4"
-                title={<><span className="text-white">The<b> T</b>eam</span></>}
-              
+                src={"videos/ans.jpg"}
+                title={<>Con<b>te</b>nt<br/> Head</>}
+                description={<><b>Anshula Lal</b></>}
                 />
+           </BentoTilt>
+           <BentoTilt className='bento-tilt_1 ms-14 md:col-span-1 md:ms-0'>
+                <BentoCard
+                src={"videos/hero-1.mp4"}
+                title={<><span className="text-white">TEam</span></>}
                 
-            </BentoTilt>
+                />
+           </BentoTilt>
+           
+           </div>
+           
         </div>
     </section>
   )
