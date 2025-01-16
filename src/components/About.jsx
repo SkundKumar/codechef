@@ -44,7 +44,7 @@ const About = () => {
           <p>stay tuned to find out</p>
         </div>
       </div>
-      <div className="h-dvh w-screen" id="clip">
+      <div className="h-dvh w-screen mt-0 "id="clip">
         <div className="mask-clip-path about-image">
           {/* For Desktop */}
           <img
