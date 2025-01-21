@@ -33,7 +33,7 @@ const About = () => {
         </h2>
         <AnimatedTitle
           title="Introducing Our New Hackath<b>on</b>"
-          containerClass="mt-5 !text-black !text-8xl text-center"
+          containerClass="mt-5 !text-black !text-8xl sm:!text-6xl text-center"
         />
         <AnimatedTitle
           title="<b></b>"
