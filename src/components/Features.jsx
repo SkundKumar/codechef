@@ -90,8 +90,8 @@ const Features = () => {
             <div className='grid h-[90vh] w-full grid-cols-2 grid-rows-2 mb-9 gap-9 '>
             <BentoTilt className='bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2'>
                 <BentoCard
-                src="videos/feature-2.png"
-                title={<><span className="text-white">M<b>ul</b>timedi<b>a</b> & Desi<b>gn</b><br/> <b>h</b>ead</span></>}
+                src="videos/skund-1.jpg"
+                title={<><span className="text-blue-100">M<b>ul</b>timedi<b>a</b> & Desi<b>gn</b><br/> <b>h</b>ead</span></>}
                 description={<><span className="text-white"><b>Skund Kumar</b></span></>}
                 />
            </BentoTilt>
