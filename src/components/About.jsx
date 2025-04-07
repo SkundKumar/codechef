@@ -32,7 +32,7 @@ const About = () => {
           Welcome to codechef
         </h2>
         <AnimatedTitle
-          title="Introducing Our New Hackath<b>on</b>"
+          title="Introducing<b> CPL</b>"
           containerClass="mt-5 !text-black !text-8xl sm:!text-6xl text-center"
         />
         <AnimatedTitle
@@ -40,7 +40,7 @@ const About = () => {
           containerClass="!mt-0 !text-black !text-8xl !md:text-4xl !sm:text-2xl text-center"
         />
         <div className="about-subtext">
-          <p>The details are still a secrete</p>
+          <p>CodeChef Premier League</p>
           <p>stay tuned to find out</p>
         </div>
       </div>

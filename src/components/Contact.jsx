@@ -55,15 +55,17 @@ const Contact = () => {
               id="text2"
               className="special-font !md:text-[10rem] w-full font-zentry !text-8xl !font-black !leading-[1]"
             >
-              "Fill the<b> Fo</b>rm to
-              <br /> register now."
+              "Visit The<b> Of</b>ficial 
+              <br /> Website."
             </h1>
           </div>
           <Button
             title={
-              <>
-                FILL IT OR ELSE <br />
+              <><a href="https://cpl-20.vercel.app/">
+                Do IT OR ELSE <br />
                 (ง •̀_•́)ง
+              </a>
+                
               </>
             }
             containerClass="mt-10 cursor-pointer"
